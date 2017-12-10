@@ -49,7 +49,7 @@ paths:
     x-swagger-router-controller: auth
     post:
       operationId: login
-      summary: Login/authorization
+      summary: Authorize with Auth0
       produces:
         - application/json
       description: Authorizes the user via auth0

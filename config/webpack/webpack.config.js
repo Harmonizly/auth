@@ -9,7 +9,7 @@ const cwd = process.cwd();
 const ASSET_URL = process.env.ASSET_URL || '/assets';
 const ASSET_PATH = process.env.ASSET_PATH || path.resolve(cwd, 'assets');
 const STATIC_PATH = process.env.STATIC_PATH || path.resolve(cwd, 'static');
-const WATCH = (process.env.NODE_ENV === 'development');
+const WATCH = false; // (process.env.NODE_ENV === 'development');
 
 const serverCompiler = {
   target: 'node',

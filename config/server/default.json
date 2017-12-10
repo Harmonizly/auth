@@ -10,7 +10,7 @@
         "clientID": "bpoFOeoQ2M7xWlVng4yHm2JUecSZe2NE",
         "clientSecret": "hD2rk6e8DT2vc4Tus5u9GQK1jS0CmNAh23rXNSOCQfer6hxFwvE2nY0txDrwgmv4",
         "domain": "harmonize.auth0.com",
-        "redirectUri": "http://auth.harmonize/api/v1/users/authorized",
+        "callbackURL": "http://auth.harmonize/api/v1/users/authorized",
         "responseType": "token",
         "scope": "openid email profile",
         "sso": true
