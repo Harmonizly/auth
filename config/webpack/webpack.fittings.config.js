@@ -20,6 +20,7 @@ module.exports = {
       path.join(cwd, 'node_modules'),
     ],
     alias: {
+      configuration: path.join(cwd, 'config'),
       server: path.join(cwd, 'src'),
     },
     extensions: ['.json', '.js', '.min.js'],
