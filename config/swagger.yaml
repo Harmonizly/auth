@@ -1,0 +1,151 @@
+swagger: '2.0'
+info:
+  title: Harmonize Web Application
+  description: Connect, do, and harominze your life
+  version: 1.0.0
+host: auth.harmonize.local
+basePath: '/api/v1'
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+paths:
+  '/':
+    # TODO protect with API key
+    x-swagger-router-controller: meta
+    get:
+      operationId: describe
+      summary: Returns the swagger description of the API
+      produces:
+        - text/plain; charset=utf-8
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+  '/users/authorized':
+    x-swagger-router-controller: auth
+    get:
+      operationId: authorized
+      summary: Authorization completed
+      produces:
+        - application/json
+      responses:
+        302:
+          description: Authorization succeded or failed
+          headers:
+            Location:
+              type: string
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+  '/users/login':
+    x-swagger-router-controller: auth
+    post:
+      operationId: login
+      summary: Login/authorization
+      produces:
+        - application/json
+      description: |
+        Validates the user with the provided credentials and logs them in if the credentials are valid
+      paramerers:
+        - name: username
+          in: body
+          description: The user's username
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: body
+          description: The user's password
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: The user's credential are valid
+          headers:
+            Authorization:
+              description: The authorization JWT Bearer token
+              type: string
+        401:
+          description: Credentials are invlaid
+          schema:
+            $ref: '#definition/Error'
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+  '/users/logout':
+    x-swagger-router-controller: auth
+    put:
+      operationId: logout
+      summary: Logout
+      produces:
+        - application/json
+      description: |
+        If the current session if authorized, logs the user out and sends a redirect
+      responses:
+        302:
+          description: Logout occurred
+          headers:
+            Location:
+              type: string
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+  '/ping':
+    x-swagger-router-controller: health
+    get:
+      operationId: ping
+      summary: Health check path
+      produces:
+        - text/plain; charset=utf-8
+      responses:
+        200:
+          description: The server is alive
+          schema:
+            type: string
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+  '/users/validate':
+    x-swagger-router-controller: auth
+    get:
+      operationId: validate
+      summary: Validates the current sessions
+      produces:
+        - application/json
+      responses:
+        200:
+          description: The current session is valid
+          schema:
+            type: string
+        401:
+          description: The current session is invalid
+          schema:
+            type: string
+        default:
+          description: Processing error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Error:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+      status:
+        type: integer
+        format: int32

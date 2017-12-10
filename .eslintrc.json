@@ -1,0 +1,84 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "plugins": [
+    "flowtype",
+    "chai-friendly"
+  ],
+  "rules": {
+    "arrow-body-style": [ "error", "always" ],
+    "class-methods-use-this": "off",
+    "flowtype/no-types-missing-file-annotation": "off",
+    "func-names": [ "error", "as-needed" ],
+    "function-paren-newline": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "warn",
+    "max-len": [ "error", 120, 2 ],
+    "no-debugger": "off",
+    "no-param-reassign": "error",
+    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
+    "chai-friendly/no-unused-expressions": 2,
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": [ "const", "let", "var" ], "next": "*" },
+      { "blankLine": "any",    "prev": [ "const", "let", "var" ], "next": [ "const", "let", "var" ] }
+    ],
+    "prefer-arrow-callback": [ "error", { "allowNamedFunctions": true } ],
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off",
+    "react/sort-comp": [ "warn", {
+      "order": [
+        "statics",
+        "propTypes",
+        "contextTypes",
+        "childContextTypes",
+        "state",
+        "instance-variables",
+        "displayName",
+        "mixins",
+        "defaultProps",
+        "constructor",
+        "static-methods",
+        "lifecycle",
+        "everything-else",
+        "rendering"
+      ],
+      "groups": {
+        "lifecycle": [
+          "getDefaultProps",
+          "getInitialState",
+          "getChildContext",
+          "componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "componentDidUpdate",
+          "componentWillUnmount"
+        ],
+        "rendering": [
+          "render",
+          "/^render.+$/"
+        ]
+      }
+    }]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack/webpack.config.js"
+      }
+    }
+  }
+}

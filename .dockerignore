@@ -1,0 +1,10 @@
+# Files
+npm-debug.log
+.DS_Store
+
+# Directories
+coverage
+node_modules
+.nyc_output
+.tmp
+.git

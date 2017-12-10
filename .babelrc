@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "syntax-flow",
+    "transform-decorators-legacy"
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "loose": true,
+        "useBuiltIns": true
+      }
+    ],
+    "stage-0",
+    "flow"
+  ],
+  "sourceMaps": true,
+  "ignore": [
+    "node_modules"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
+}

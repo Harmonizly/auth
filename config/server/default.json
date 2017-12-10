@@ -1,0 +1,81 @@
+{
+  "server": {
+    "auth0": {
+      "api": {
+        "domain": "harmonize.auth0.com",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlEwRTRRMFZCUlRORU5rRTJOMEZGT1VRMlJFTkROalkyUWtVd09ERkZNek0zTUVSQk9VWXhOdyJ9.eyJpc3MiOiJodHRwczovL2hhcm1vbml6ZS5hdXRoMC5jb20vIiwic3ViIjoiZGFSbWF1TmdVN29rZDQxekdsbnJoS29HUlIwalBBR0hAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaGFybW9uaXplLmF1dGgwLmNvbS9hcGkvdjIvIiwiaWF0IjoxNTEyOTQzMDI0LCJleHAiOjE1MTMwMjk0MjQsInNjb3BlIjoicmVhZDpjbGllbnRfZ3JhbnRzIGNyZWF0ZTpjbGllbnRfZ3JhbnRzIGRlbGV0ZTpjbGllbnRfZ3JhbnRzIHVwZGF0ZTpjbGllbnRfZ3JhbnRzIHJlYWQ6dXNlcnMgdXBkYXRlOnVzZXJzIGRlbGV0ZTp1c2VycyBjcmVhdGU6dXNlcnMgcmVhZDp1c2Vyc19hcHBfbWV0YWRhdGEgdXBkYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSBkZWxldGU6dXNlcnNfYXBwX21ldGFkYXRhIGNyZWF0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJfdGlja2V0cyByZWFkOmNsaWVudHMgdXBkYXRlOmNsaWVudHMgZGVsZXRlOmNsaWVudHMgY3JlYXRlOmNsaWVudHMgcmVhZDpjbGllbnRfa2V5cyB1cGRhdGU6Y2xpZW50X2tleXMgZGVsZXRlOmNsaWVudF9rZXlzIGNyZWF0ZTpjbGllbnRfa2V5cyByZWFkOmNvbm5lY3Rpb25zIHVwZGF0ZTpjb25uZWN0aW9ucyBkZWxldGU6Y29ubmVjdGlvbnMgY3JlYXRlOmNvbm5lY3Rpb25zIHJlYWQ6cmVzb3VyY2Vfc2VydmVycyB1cGRhdGU6cmVzb3VyY2Vfc2VydmVycyBkZWxldGU6cmVzb3VyY2Vfc2VydmVycyBjcmVhdGU6cmVzb3VyY2Vfc2VydmVycyByZWFkOmRldmljZV9jcmVkZW50aWFscyB1cGRhdGU6ZGV2aWNlX2NyZWRlbnRpYWxzIGRlbGV0ZTpkZXZpY2VfY3JlZGVudGlhbHMgY3JlYXRlOmRldmljZV9jcmVkZW50aWFscyByZWFkOnJ1bGVzIHVwZGF0ZTpydWxlcyBkZWxldGU6cnVsZXMgY3JlYXRlOnJ1bGVzIHJlYWQ6ZW1haWxfcHJvdmlkZXIgdXBkYXRlOmVtYWlsX3Byb3ZpZGVyIGRlbGV0ZTplbWFpbF9wcm92aWRlciBjcmVhdGU6ZW1haWxfcHJvdmlkZXIgYmxhY2tsaXN0OnRva2VucyByZWFkOnN0YXRzIHJlYWQ6dGVuYW50X3NldHRpbmdzIHVwZGF0ZTp0ZW5hbnRfc2V0dGluZ3MgcmVhZDpsb2dzIHJlYWQ6c2hpZWxkcyBjcmVhdGU6c2hpZWxkcyBkZWxldGU6c2hpZWxkcyB1cGRhdGU6dHJpZ2dlcnMgcmVhZDp0cmlnZ2VycyByZWFkOmdyYW50cyBkZWxldGU6Z3JhbnRzIHJlYWQ6Z3VhcmRpYW5fZmFjdG9ycyB1cGRhdGU6Z3VhcmRpYW5fZmFjdG9ycyByZWFkOmd1YXJkaWFuX2Vucm9sbG1lbnRzIGRlbGV0ZTpndWFyZGlhbl9lbnJvbGxtZW50cyBjcmVhdGU6Z3VhcmRpYW5fZW5yb2xsbWVudF90aWNrZXRzIHJlYWQ6dXNlcl9pZHBfdG9rZW5zIGNyZWF0ZTpwYXNzd29yZHNfY2hlY2tpbmdfam9iIGRlbGV0ZTpwYXNzd29yZHNfY2hlY2tpbmdfam9iIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.0EM8KqqLV_hfH6Px-FX_Lq625MgpGMiZ7ruhe3vAEzMQzoJ3_NZ7tMKFqb1uo3cCCdA_xw640NqZdXBc8ae3hDFkuhu4PAQYZDRP0Dtu_oXdksrPRaxiB-2nGD0l_lKOs8ZRF1e8ZdYzcfR1QS47fxeVQH1d6XM3uordVAPIGEcZrO9TklmVmXTDA17YZTHYdLOJY8oFlPSFRFl0baGwlsmw5ZsMbX58SGlS_M6Yg6ky9hE2VCLTlbEe-OjGTQMazxXDrGKj02arJcQ_j4TS-M3pPusYXyfn4JLu6oHzgn5NShkjIKXj4nyAB-FJ8UEoTa49daH84nQrYJlNl7hJBQ"
+      },
+      "client": {
+        "audience": "https://harmonize.auth0.com/userinfo",
+        "clientID": "bpoFOeoQ2M7xWlVng4yHm2JUecSZe2NE",
+        "clientSecret": "hD2rk6e8DT2vc4Tus5u9GQK1jS0CmNAh23rXNSOCQfer6hxFwvE2nY0txDrwgmv4",
+        "domain": "harmonize.auth0.com",
+        "redirectUri": "http://auth.harmonize/api/v1/users/authorized",
+        "responseType": "token",
+        "scope": "openid email profile",
+        "sso": true
+      },
+      "jwt": {
+        "audience": "",
+        "issuer": "https://harmonize.auth0.com/",
+        "ignoreExpiration": false,
+        "jsonWebTokenOptions": {
+          "expiresIn": "1d"
+        },
+        "secretOrKey": "v6wsq+z87dzt5ll5115&)wwwc_*lo1i5g_g8m5w6q_!^g6=ixu"
+      }
+    },
+    "assets": {
+      "path": "./assets",
+      "url": "/assets"
+    },
+    "name": "auth.harmonize",
+    "backlog": 511,
+    "loggers": {
+      "handlers": [
+        {
+          "name": "root",
+          "level": "debug"
+        },
+        {
+          "name": "request",
+          "level": "debug"
+        }
+      ],
+      "streams": {}
+    },
+    "hostname": "127.0.0.1",
+    "port": 3000,
+    "secure": false
+  },
+  "swagger": {
+    "fittingsDirs": [ "./assets/fittings", "./src/server/api/fittings", "node_modules" ],
+    "defaultPipe": null,
+    "swaggerControllerPipe": "swagger_controllers",
+    "bagpipes": {
+      "_router": {
+        "name": "swagger_router",
+        "mockMode": false,
+        "mockControllersDirs": [ "src/server/api/mocks" ],
+        "controllersDirs": [ "src/server/api/controllers" ]
+      },
+      "_swagger_validate": {
+        "name": "swagger_validator",
+        "validateResponse": true
+      },
+      "swagger_controllers": [
+        {
+          "onError": "json_error_handler"
+        },
+        "swagger_params_parser",
+        "swagger_security",
+        "_swagger_validate",
+  		  "express_compatibility",
+  		  "_router"
+      ],
+      "swagger_raw": {
+        "name": "swagger_raw"
+      }
+    }
+  }
+}

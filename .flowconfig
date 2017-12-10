@@ -1,0 +1,23 @@
+[ignore]
+<PROJECT_ROOT>/test/.*
+<PROJECT_ROOT>/static/.*
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/node_modules/config-chain/test/broken.json
+<PROJECT_ROOT>/index.js
+
+[include]
+
+[libs]
+
+[options]
+all=true
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+unsafe.enable_getters_and_setters=true
+esproposal.decorators=ignore
+esproposal.export_star_as=enable
+
+module.name_mapper='^server\/\(.*\)$' -> '<PROJECT_ROOT>/src/server/\1'
+module.name_mapper='^services\/\(.*\)$' -> '<PROJECT_ROOT>/src/services/\1'
+module.name_mapper='^test\/\(.*\)$' -> '<PROJECT_ROOT>/test/\1'
+module.name_mapper='^client\/\(.*\)$' -> '<PROJECT_ROOT>/src/client/\1'
