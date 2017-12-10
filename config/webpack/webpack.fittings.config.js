@@ -12,7 +12,7 @@ module.exports = {
   entry: {
     swagger_router: [
       'babel-polyfill',
-      path.join(cwd, 'src/server/api/fittings/swagger_router'),
+      path.join(cwd, 'src/api/fittings/swagger_router'),
     ],
   },
   resolve: {
@@ -20,7 +20,7 @@ module.exports = {
       path.join(cwd, 'node_modules'),
     ],
     alias: {
-      server: path.join(cwd, 'src/server'),
+      server: path.join(cwd, 'src'),
     },
     extensions: ['.json', '.js', '.min.js'],
   },
@@ -38,6 +38,6 @@ module.exports = {
   output: {
     filename: '[name].js',
     libraryTarget: 'commonjs2',
-    path: path.join(cwd, 'dist/fittings'),
+    path: path.join(cwd, 'assets/fittings'),
   },
 };

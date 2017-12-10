@@ -19,7 +19,7 @@ const serverCompiler = {
   entry: {
     server: [
       'babel-polyfill',
-      path.join(cwd, 'src/server/main.js'),
+      path.join(cwd, 'src/main.js'),
     ],
   },
   resolve: {
@@ -28,9 +28,8 @@ const serverCompiler = {
       path.join(cwd, 'static'),
     ],
     alias: {
-      client: path.join(cwd, 'src/client'),
       configuration: path.join(cwd, 'config'),
-      server: path.join(cwd, 'src/server'),
+      server: path.join(cwd, 'src'),
       static: path.join(cwd, 'static'),
       tests: path.join(cwd, 'tests'),
     },
