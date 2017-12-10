@@ -32,6 +32,11 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.y(a)?ml$/i,
+        use: 'yml-loader',
+        exclude: /node_modules/,
+      },
     ],
     noParse: /\.min\.js/,
   },
