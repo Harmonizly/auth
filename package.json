@@ -60,7 +60,7 @@
     "jsonwebtoken": "^8.1.0",
     "passport": "^0.4.0",
     "passport-auth0": "^0.6.0",
-    "passport-jwt": "^3.0.1",
+    "passport-jwt": "^4.0.0",
     "pm2": "^2.7.2",
     "stack-trace": "^0.0.10",
     "swagger": "^0.7.5",
