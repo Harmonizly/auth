@@ -68,7 +68,7 @@
     "swagger-tools": "^0.10.3",
     "uuid": "^3.1.0",
     "webpack": "^3.8.1",
-    "webpack-dev-middleware": "^2.0.0"
+    "webpack-dev-middleware": "^3.1.2"
   },
   "resolutions": {
     "swagger-node-runner/**/bagpipes": "git+https://github.com/gooftroop/bagpipes.git"
