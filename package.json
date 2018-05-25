@@ -67,7 +67,7 @@
     "swagger-node-runner": "^0.7.3",
     "swagger-tools": "^0.10.3",
     "uuid": "^3.1.0",
-    "webpack": "^3.8.1",
+    "webpack": "^4.9.0",
     "webpack-dev-middleware": "^2.0.0"
   },
   "resolutions": {
