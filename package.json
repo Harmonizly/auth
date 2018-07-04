@@ -59,7 +59,7 @@
     "helmet": "^3.9.0",
     "jsonwebtoken": "^8.1.0",
     "passport": "^0.4.0",
-    "passport-auth0": "^0.6.0",
+    "passport-auth0": "^1.0.0",
     "passport-jwt": "^3.0.1",
     "pm2": "^2.7.2",
     "stack-trace": "^0.0.10",
